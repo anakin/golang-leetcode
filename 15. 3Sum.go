@@ -3,14 +3,17 @@ package main
 import "sort"
 
 func threeSum(nums []int) [][]int {
+	//先排序
 	sort.Ints(nums)
+
 	res := make([][]int, 0)
 	f := func(nums []int, begin int, end int, target int) {
-		for begin < end {
+		for begin < end { //从两端向中间遍历
 			if nums[begin]+nums[end]+target == 0 {
 				r := make([]int, 0)
 				r = append(r, nums[begin], nums[end], target)
 				res = append(res, r)
+				//遇到相等的，就快进
 				for begin < end && nums[begin] == nums[begin+1] {
 					begin++
 				}

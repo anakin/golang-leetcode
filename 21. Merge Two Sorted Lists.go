@@ -5,6 +5,10 @@ type ListNode struct {
 	Next *ListNode
 }
 
+/**
+递归操作
+当某一个为空的时候，退出
+*/
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	if l1 == nil {
 		return l2

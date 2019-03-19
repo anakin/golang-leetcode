@@ -8,6 +8,7 @@ func longestCommonPrefix(strs []string) string {
 	}
 	minLen := math.MaxInt32
 	minStr := ""
+	//先找到最短的字符串
 	for _, v := range strs {
 		l := len(v)
 		if l < minLen {

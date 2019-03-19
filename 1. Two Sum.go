@@ -1,5 +1,8 @@
 package main
 
+/**
+用hash保存另一个数的值，遍历的同时判断是否存在
+*/
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)
 	for i := 0; i < len(nums); i++ {

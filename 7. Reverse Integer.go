@@ -2,6 +2,10 @@ package main
 
 import "math"
 
+/**
+循环取余数
+需要注意越界
+*/
 func reverse(x int) int {
 
 	res := 0
