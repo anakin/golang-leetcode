@@ -1,5 +1,10 @@
 package main
 
+/**
+dp解法
+状态方程：dp[i] =min(dp[i-2]+cost[i-2],dp[i-1]+cost[i-1])
+*/
+
 func minCostClimbingStairs(cost []int) int {
 	l := len(cost)
 	t := make([]int, l)
