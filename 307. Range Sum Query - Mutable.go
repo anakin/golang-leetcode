@@ -1,7 +1,5 @@
 package main
 
-import "github.com/olivere/elastic"
-
 type NumArray struct {
 	n []int
 }
