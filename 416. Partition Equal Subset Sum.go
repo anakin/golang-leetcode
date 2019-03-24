@@ -1,9 +1,11 @@
 package main
 
 /**
+dp
 dp[i]:是否可以得到和i
 dp[i+v]=true,如果dp[i]==true，如果可以得到i，那么加上v就得到了i+v，所以dp[i+v]=true
 dp[0] =true,得到和0是可以的
+循环处理获得dp，期间要判断是否已经得到了结果
 */
 func canPartition(nums []int) bool {
 	sum := 0
