@@ -24,5 +24,11 @@ func getHeight(root *TreeNode) int {
 		return 0
 	}
 
-	return int(math.Max(float64(getHeight(root.Left)), float64(getHeight(root.Right))) + 1)
+	return mymax(getHeight(root.Left), getHeight(root.Right)) + 1
+}
+func mymax(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
 }
