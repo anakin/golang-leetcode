@@ -20,11 +20,11 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 	a, b = headA, headB
 	for la < lb {
 		b = b.Next
-		b--
+		lb--
 	}
 	for lb < la {
 		a = a.Next
-		a--
+		la--
 	}
 	for a != b {
 		a = a.Next
