@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+/**
+用二分查找。对heaters进行sort，然后得到某个house的相对位置。再计算左右的距离。
+
+*/
 func findRadius(houses []int, heaters []int) int {
 	sort.Ints(heaters)
 	ret := -1

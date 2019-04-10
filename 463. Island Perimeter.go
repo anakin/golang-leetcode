@@ -1,5 +1,9 @@
 package main
 
+/**
+思路就是每一个为1的点，看它的上下左右是否也为1，若为1则有一边重复，最后加的时候要减去重复的边。
+*/
+
 func islandPerimeter(grid [][]int) int {
 	row := len(grid)
 	col := len(grid[0])
