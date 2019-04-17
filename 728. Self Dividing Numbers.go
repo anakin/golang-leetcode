@@ -1,5 +1,8 @@
 package main
 
+/**
+双重遍历，可以排除10的倍数
+*/
 func selfDividingNumbers(left int, right int) []int {
 	ret := []int{}
 	for i := left; i <= right; i++ {
