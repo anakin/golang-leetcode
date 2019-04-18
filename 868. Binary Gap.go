@@ -7,8 +7,8 @@ func binaryGap(N int) int {
 		return 0
 	}
 
-	for ; N > 0; N >>= 1 {
-		if N&1 == 1 {
+	for ; N > 0; N >>= 1 { //N不断的右移
+		if N&1 == 1 { //判断是否等于1
 			if max == 0 {
 				max = 1
 			}
